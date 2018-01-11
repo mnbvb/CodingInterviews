@@ -119,7 +119,7 @@ public:
         int count = 0;
         while(node != NULL)
         {
-            dout <<node->val <<"in stack" <<endl;
+            cout <<node->val <<"in stack" <<endl;
             st.push(node->val);
 
             count++;
@@ -129,7 +129,7 @@ public:
 
         //  为了效率我们静态vector开辟空间
         vector<int> res(count);
-        dout <<"count = " <<count <<endl;
+        cout <<"count = " <<count <<endl;
         for(int i = 0; i < count && st.empty( ) != true; i++)
         {
             dout <<st.top() <<"in vector" <<endl;
